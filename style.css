@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#header {
+    height: 8.5rem;
+    max-width: 100%;
+    position: relative;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    color: black;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.search {
+    width: 40%;
+    position: relative;
+}
+
+.search-input {
+    background-color:  #f1f1f1;
+    height: 40px;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+#search-icon {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    color:  black;
+
+}
+
+#shopping-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header-menu {
+    height: 2rem;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.header-menu li {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.header-menu li:last-child {
+    color: red;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container-image img {
+    position: absolute;
+    width: 100%;
+    height: 40rem;
+}
+
+.container-box {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    width: 50%;
+    height: 100%;
+}
+
+.right-side {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
