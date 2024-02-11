@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,6 +14,10 @@ html {
 img {
     max-width: 100%;
     height: auto;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 #header {
@@ -32,6 +37,7 @@ img {
     color: black;
     font-weight: bolder;
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .search {
@@ -77,6 +83,12 @@ img {
     align-items: center;
     list-style-type: none;
     font-weight: bold;
+    font-size: 1.125rem;
+    transition: 0.3s;
+}
+
+.header-menu li:hover {
+    border-bottom: 1px solid black;
 }
 
 .header-menu li {
@@ -93,12 +105,15 @@ img {
     position: relative;
     width: 100%;
     height: auto;
+    margin-bottom: 7rem;
 }
 
 .container-image img {
     position: absolute;
     width: 100%;
     height: 40rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .container-box {
@@ -106,6 +121,7 @@ img {
     height: 40rem;
     display: flex;
     flex-direction: row;
+    
 }
 
 .left-side {
@@ -116,7 +132,109 @@ img {
 .right-side {
     width: 50%;
     height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.right-side h1 {
+    font-size: 3.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.right-side span {
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 3rem;
+}
+
+.right-side button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color:  #f1f1f1;
+    border-radius: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right-side button:hover {
+    background-color: gray;
+}
+
+.categories {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+.categories-grid {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* 6 rows */
+    grid-template-columns: repeat(6, 1fr); /* 2 columns */
+    gap: 1rem; /* gap between grid items */
+
+}
+
+.grid-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   object-fit: contain;
+   flex-direction: column;
+}
+
+.grid-item img {
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grid-item img:hover {
+    transform: translateY(-10px);
+}
+
+.grid-item span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  #scrollToTopBtn.hidden {
+    display: none;
+  }
+  
+  #scrollToTop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+
 
 
 
