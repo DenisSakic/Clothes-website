@@ -1,4 +1,4 @@
-// Funkcija koja provjerava da li treba prikazati strelicu
+// A function that checks whether an arrow should be displayed
 function checkScroll() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -8,17 +8,17 @@ function checkScroll() {
     }
   }
   
-  // Funkcija koja se poziva kada se klikne na strelicu
+  // The function that is called when the arrow is clicked
   function scrollToTop() {
-    document.body.scrollTop = 0; // Za Safari
-    document.documentElement.scrollTop = 0; // Za Chrome, Firefox, IE i Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE i Opera
   }
   
-  // Dodavanje event listenera za scroll
+  // Adding an event listener for scroll
   window.onscroll = function() {
     checkScroll();
   };
   
-  // Dodavanje event listenera za klik na strelicu
+  // Adding event listener for arrow click
   document.getElementById("scrollToTop").addEventListener("click", scrollToTop);
   
