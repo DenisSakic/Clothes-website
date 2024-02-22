@@ -105,6 +105,31 @@ body {
     color: red;
 }
 
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.mobile-menu li {
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+
+
 .container {
     position: relative;
     width: 100%;
@@ -329,22 +354,26 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     
     .search {
         width: 70%;
+        margin-bottom: 1rem;
     }
 
     #search-icon {
         top: 50%;
     }
 
-    .logo {
-        margin-bottom: 1rem;
+    .menu-toggle {
+        cursor: pointer;
     }
 
-    #shopping-icon {
-        display: none;
+    .logo {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
     }
+
     
     .header-menu ul li {
         display: none;

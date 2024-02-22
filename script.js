@@ -19,6 +19,45 @@ function checkScroll() {
     checkScroll();
   };
   
-  // Adding event listener for arrow click
+ // Adding event listener for arrow click
   document.getElementById("scrollToTop").addEventListener("click", scrollToTop);
   
+// Select the shopping bag icon and the hamburger menu icon
+const shoppingIcon = document.getElementById('shopping-icon');
+const menuToggleIcon = document.getElementById('menu-toggle-icon');
+
+// Function to change the icon
+function toggleIcons() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 768) { // Set the desired screen width below which you want to display the hamburger icon
+        shoppingIcon.style.display = 'none'; // Hide the shopping bag icon
+        menuToggleIcon.style.display = 'inline-block'; // Display the hamburger icon
+    } else {
+        shoppingIcon.style.display = 'inline-block'; // Display the shopping bag icon
+        menuToggleIcon.style.display = 'none'; // Hide the hamburger icon
+    }
+}
+
+// We call the function to change the icon when the page loads and when the screen size changes
+window.addEventListener('load', toggleIcons);
+window.addEventListener('resize', toggleIcons);
+
+
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  var menu = document.getElementById('mobile-menu');
+  if (menu.style.display === 'none') {
+      menu.style.display = 'block';
+  } else {
+      menu.style.display = 'none';
+  }
+});
+
+
+
+
+
+
+
+
+
