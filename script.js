@@ -22,7 +22,7 @@ function checkScroll() {
  // Adding event listener for arrow click
   document.getElementById("scrollToTop").addEventListener("click", scrollToTop);
   
-// Select the shopping bag icon and the hamburger menu icon
+// Select the shopping bag icon and the hamburger menu iconn
 const shoppingIcon = document.getElementById('shopping-icon');
 const menuToggleIcon = document.getElementById('menu-toggle-icon');
 
