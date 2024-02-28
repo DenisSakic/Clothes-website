@@ -29,7 +29,7 @@ const menuToggleIcon = document.getElementById('menu-toggle-icon');
 // Function to change the icon
 function toggleIcons() {
     const screenWidth = window.innerWidth;
-    if (screenWidth <= 768) { // Set the desired screen width below which you want to display the hamburger icon
+    if (screenWidth <= 1024) { // Set the desired screen width below which you want to display the hamburger icon
         shoppingIcon.style.display = 'none'; // Hide the shopping bag icon
         menuToggleIcon.style.display = 'inline-block'; // Display the hamburger icon
     } else {
