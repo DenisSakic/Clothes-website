@@ -14,7 +14,7 @@ function checkScroll() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE i Opera
   }
   
-  // Adding an event listener for scroll ...
+  // Adding an event listener for scroll ..
   window.onscroll = function() {
     checkScroll();
   };
